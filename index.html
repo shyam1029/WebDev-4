@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grama Panchayat</title>
+    <link rel="stylesheet" href="stl.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="download.jpg"
+              alt="my company name"
+              style="max-width: 80px; height: auto; border-radius: 100%"
+          /></a>
+          <h1><strong>Grama Panchayat</strong></h1>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li>
+              <button class="dynamic-button">
+                <a href="about.html">About</a>
+              </button>
+            </li>
+            <li>
+              <button class="dynamic-button">
+                <a href="contact.html">Contact</a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="containers">
+      <div class="animated-borders">
+        <div class="container" id="container">
+          <div class="form-container sign-up-container">
+            <form action="userlogin" method="post">
+              <h1>Villager/Panchayat Mandal</h1>
+              <br /><br />
+              <input type="email" placeholder="email" name="email" required />
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Village id"
+                name="villageID"
+                required
+              />
+              <button class="dynamic-button">Login</button>
+            </form>
+          </div>
+          <div class="form-container sign-in-container">
+            <form action="login" method="post">
+              <h1>Village Administrator</h1>
+              <input
+                type="email"
+                placeholder="emailID"
+                name="emailID"
+                required
+              />
+              <input
+                type="text"
+                placeholder="villageID"
+                name="villageID"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                required
+              />
+              <button class="dynamic-button">Login</button>
+            </form>
+          </div>
+          <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <br />
+                <p>
+                  To keep connected with us please login with your personal info
+                </p>
+                <br />
+                <button class="dynamic-button" id="signIn">
+                  Village Administrator
+                </button>
+              </div>
+              <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <br />
+                <p>Enter your personal details and start journey with us</p>
+                <br />
+                <button class="dynamic-button" id="signUp">
+                  Go To Villager
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const signUpButton = document.getElementById("signUp");
+      const signInButton = document.getElementById("signIn");
+      const container = document.getElementById("container");
+
+      signUpButton.addEventListener("click", () => {
+        container.classList.add("right-panel-active");
+      });
+
+      signInButton.addEventListener("click", () => {
+        container.classList.remove("right-panel-active");
+      });
+    </script>
+
+    <footer>
+      <div class="footer">
+        <div class="logo2">
+          <img
+            src="download.jpg"
+            alt="my company name"
+            style="max-width: 80px; height: auto; border-radius: 100%"
+          />
+          <h1><strong>Grama Panchayat</strong></h1>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

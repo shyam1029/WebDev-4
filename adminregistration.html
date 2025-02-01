@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grama Panchayat</title>
+    <link rel="stylesheet" href="stl.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="download.jpg"
+              alt="Grama Panchayat"
+              style="max-width: 80px; height: auto; border-radius: 100%"
+          /></a>
+          <h1><strong>Grama Panchayat</strong></h1>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li>
+              <button class="dynamic-button">
+                <a href="about.html">About</a>
+              </button>
+            </li>
+            <li>
+              <button class="dynamic-button">
+                <a href="contact.html">Contact</a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="body">
+      <div class="box">
+        <span class="borderline"></span>
+        <form action="registerAdmin" method="post">
+          <h2>Admin Register</h2>
+          <div class="inputBox">
+            <input type="email" required="required" name="emailID" />
+            <span>EmailID</span>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input type="text" required="required" name="villageID" />
+            <span>VillageID</span>
+            <i></i>
+          </div>
+          <br />
+          <div class="inputBox">
+            <input type="password" required="required" name="password" />
+            <span>Password</span>
+            <i></i>
+          </div>
+          <br />
+          <input type="submit" value="Submit" class="btn" />
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="logo2">
+          <img
+            src="download.jpg"
+            alt="Grama Panchayat"
+            style="max-width: 80px; height: auto; border-radius: 100%"
+            id="first"
+          />
+          <h1><strong>Grama Panchayat</strong></h1>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

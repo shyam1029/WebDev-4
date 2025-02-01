@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grama Panchayat</title>
+    <link rel="stylesheet" href="stl.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="download.jpg"
+              alt="Grama Panchayat"
+              style="max-width: 80px; height: auto; border-radius: 100%"
+          /></a>
+          <h1><strong>Grama Panchayat</strong></h1>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li>
+              <button
+                class="dynamic-button"
+                onclick="window.location.href='villageDetails'"
+              >
+                Back
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="containers">
+      <form action="tender" method="post">
+        <div class="tender">
+          <label>Tender/Notice ID</label>
+          <input class="input2" type="text" name="tender_id" required /><br />
+          <label>Description</label><br />
+          <textarea name="description" rows="10" cols="100" required></textarea
+          ><br />
+          <button class="dynamic-button" type="submit">Add</button>
+        </div>
+      </form>
+      <form action="edit" method="post">
+        <div class="tender">
+          <label>Tender/Notice ID</label>
+          <input class="input2" type="text" name="tender_id" required /><br />
+          <label>Description</label><br />
+          <textarea name="description" rows="10" cols="100" required></textarea
+          ><br />
+          <button class="dynamic-button" type="submit">Edit</button>
+        </div>
+      </form>
+      <form action="remove" method="post">
+        <div class="tender">
+          <label>Tender/Notice ID</label>
+          <input class="input2" type="text" name="tender_id" required />
+          <button class="dynamic-button" type="submit">Remove</button>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="footer-col-2">
+          <img
+            src="download.jpg"
+            alt="Grama Panchayat"
+            style="max-width: 80px; height: auto; border-radius: 100%"
+            id="first"
+          />
+          <h1><strong>Grama Panchayat</strong></h1>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
